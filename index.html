@@ -3,15 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>Bloomscape | Money Tree</title>
-  <!-- We need to add in an important meta tag here -->
-  <!-- Link the css here -->
-  <!-- If you are using a Google font, add your links here OR as @import in your css  -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Do not change html markup in header. -->
-  <header class="nav">
-    <h1><img src="images/bloomscape-logo.svg" alt="Bloomscape logo"></h1>
+  <header class="wrapper">
+    <div class="logo">
+      <h1><img src="images/bloomscape-logo.svg" alt="Bloomscape logo"></h1>
+    </div>
     <nav>
       <ul>
         <li><a href="#">Plants</a></li>
@@ -24,105 +26,125 @@
 
 
   <!-- Add content for your product page using provided text in content.txt -->
-  <main class="content">
+  <main class="wrapper">
     <div>
-    <h2>Money Tree</h2>
-    <h3>$169</h3>
-    <button><a href="#">Add to Cart</a></button>
-    <p>Popular for its use in Feng Shui, the Money Tree is a pet-friendly and air-purifying plant with large star-shaped leaves and a braided trunk to give your home a tropical feel.</p>
-  </div>
+      <h2>Money Tree</h2>
+      <h3>$169</h3>
+      <button><a href="#">Add to Cart</a></button>
+      <p>Popular for its use in Feng Shui, the Money Tree is a pet-friendly and air-purifying plant with large star-shaped leaves and a braided trunk to give your home a tropical feel.</p>
+    </div>
 
-<div>
-  <img src="images/money-tree-wooden-plant-stand.jpeg" alt="">
-  <img src="images/money-tree-alt-detailed.jpeg" alt="">
-  <img src="images/mini-money-tree.jpeg" alt="">
-  <img src="images/money-tree-plant-size.png" alt="">
-  <img src="images/money-tree-detailed.jpeg" alt="">
-</div>
-
-  <div>
-    <h4>Details & Care</h4>
-    <dl>
-      <dt>Size:</dt>
-      <dd>XL - 32”-40” tall (including recycled plastic Ecopot)</dd>
-      <dd>Difficulty:</dd>
-      <dl>No-fuss - Carefree</dl>
-      <dd>Light:</dd>
-      <dl>Low to Bright Indirect</dl>
-      <dd>Pet friendly:</dd>
-      <dl>Yes - Non-toxic and pet-friendly</dl>
-      <dd>Air Cleaner:</dd>
-      <dl>Yes - Releases oxygen and absorbs pollutants</dl>
-    </dl>
-  </div>
-
-<div>
-<h4>What’s Included</h4>
-<ul>
-<li>Healthy plant pre-potted with premium soil</li>
-<li>Ecopots pot and saucer</li>
-<li>All the tips and tricks for expert-level care</li>
-</ul>
-</div>
-
-<div>
-<h4>Description</h4>
-<p>Composed of several Pachinra aquatica plants braided together, the Money Tree resembles both a tree and a palm. Native from Mexico to northern South America where it grows up to 60 feet tall outdoors, this is a commonly found houseplant in East Asia where the braided trunk cultivation was popularized.
-</p>
-
-<p>The Money Tree was named after the Feng Shui belief that it will foster positive energy and bring good luck to its owner. This plant may also reduce stress, anxiety, and may also help to relieve sleeping disorders.
-</p>
-<p>A Clean Air Study by NASA named the Money Tree as one of the most effective houseplants for clearing toxins from the air of your home.
-</p>
-</div>
-
-
-<div>
-
-<h4>Botanical name:</h4>
-<p>Pachira aquatica</p>
-
-<h4>Common name(s):</h4>
-<p>Money Tree, Good Luck Tree, Malabar Chestnut, Saba Nut, Guiana Chestnut, Wild Kapock Tree, Mexican Money Tree</p>
-
-</div>
-
-<section>
-<h4>People also browsed</h4>
-
-Sanseviera
-$149
-(img provided)
-
-Mini Money Tree
-$49
-(img provided)
-
-Red Prayer Plant
-$39
-(img provided)
-
-Bird of Paradise
-$199
-(img provided)
+<section class="main-images">
+    <div id="image1">
+      <img src="images/money-tree-wooden-plant-stand.jpeg" alt="">
+    </div>
+    <div id="image2">
+      <img src="images/money-tree-alt-detailed.jpeg" alt="">
+    </div>
+    <div id="image3">
+      <img src="images/mini-money-tree.jpeg" alt="">
+    </div>
 </section>
 
+<article class="about">
+<div class="description">
+  <h4>Description</h4>
+  <p>Composed of several Pachinra aquatica plants braided together, the Money Tree resembles both a tree and a palm. Native from Mexico to northern South America where it grows up to 60 feet tall outdoors, this is a commonly found houseplant in East Asia where the braided trunk cultivation was popularized.
+  </p>
 
-<section>
-<h4>What people are saying</h4>
+  <p>The Money Tree was named after the Feng Shui belief that it will foster positive energy and bring good luck to its owner. This plant may also reduce stress, anxiety, and may also help to relieve sleeping disorders.
+  </p>
+  <p>A Clean Air Study by NASA named the Money Tree as one of the most effective houseplants for clearing toxins from the air of your home.
+  </p>
+</div>
 
-<p>"This is the best plant store I have ever ordered from! My plants were shipped/delivered so fast. When I had a question, Bloomscape got back to me right away, and they were so friendly!"
-- Jess J.
-</p>
-<p>
-"The plants are in such great shape when they arrive, the pots are beautiful, and the variety is fantastic."
-- Meghan K.
-</p>
-<p>
-"I knew nothing about plants, and was able to feel confident about caring for them. I haven’t killed one yet, thanks to help from your care guides and Plant Mom!"
-- Kayla B.
-</p>
-</section>
+
+    <div class="details-care">
+      <h4>Details & Care</h4>
+      <dl>
+        <dt>Size:</dt>
+        <dd>XL - 32”-40” tall (including recycled plastic Ecopot)</dd>
+        <dd>Difficulty:</dd>
+        <dl>No-fuss - Carefree</dl>
+        <dd>Light:</dd>
+        <dl>Low to Bright Indirect</dl>
+        <dd>Pet friendly:</dd>
+        <dl>Yes - Non-toxic and pet-friendly</dl>
+        <dd>Air Cleaner:</dd>
+        <dl>Yes - Releases oxygen and absorbs pollutants</dl>
+      </dl>
+    </div>
+
+    <div class="whats-included">
+      <h4>What’s Included</h4>
+      <ul>
+        <li>Healthy plant pre-potted with premium soil</li>
+        <li>Ecopots pot and saucer</li>
+        <li>All the tips and tricks for expert-level care</li>
+      </ul>
+    </div>
+</article>
+
+    <section id="image4">
+      <img src="images/money-tree-plant-size.png" alt="">
+    </section>
+    <section id="image5">
+      <img src="images/money-tree-detailed.jpeg" alt="">
+    </section>
+
+    <div class="bonical-name">
+      <h4>Botanical name:</h4>
+      <p>Pachira aquatica</p>
+
+      <h4>Common name(s):</h4>
+      <p>Money Tree, Good Luck Tree, Malabar Chestnut, Saba Nut, Guiana Chestnut, Wild Kapock Tree, Mexican Money Tree</p>
+    </div>
+
+
+  <section>
+    <h4>People also browsed</h4>
+
+<div class="also-browsed">
+
+    <div>
+    <strong><p>Sanseviera</p></strong>
+    <p>$149</p>
+    <img src="images/sanseviera.jpeg" alt="">
+</div>
+
+<div>
+    <strong><p>Mini Money Tree</p></strong>
+    <p>$49</p>
+    <img src="images/mini-money-tree.jpeg" alt="">
+</div>
+<div>
+    <strong><p>Red Prayer Plant</p></strong>
+    <p>$39</p>
+    <img src="images/red-prayer-plant.jpeg" alt="">
+</div>
+<div>
+    <strong><p>Bird of Paradise</p></strong>
+    <p>$199</p>
+    <img src="images/bird-of-paradise.jpeg" alt="">
+  </div>
+  </section>
+
+
+    <section class="people-saying">
+      <h4>What people are saying</h4>
+
+      <p>"This is the best plant store I have ever ordered from! My plants were shipped/delivered so fast. When I had a question, Bloomscape got back to me right away, and they were so friendly!"
+        - Jess J.
+      </p>
+      <p>
+        "The plants are in such great shape when they arrive, the pots are beautiful, and the variety is fantastic."
+        - Meghan K.
+      </p>
+      <p>
+        "I knew nothing about plants, and was able to feel confident about caring for them. I haven’t killed one yet, thanks to help from your care guides and Plant Mom!"
+        - Kayla B.
+      </p>
+    </section>
   </main>
 
 

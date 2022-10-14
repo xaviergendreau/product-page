@@ -11,9 +11,22 @@ html {
 }
 
 body {
-  margin: 0;
-  /* include your font family and default line-height */
+  margin: 1rem;
+  line-height: 1.25;
+  font-family: 'Quicksand', sans-serif;
 }
+
+h4 {
+  font-size: 120%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 400px;
+  height: 100px;
+}
+
 
 img {
   width: 100%;
@@ -26,6 +39,7 @@ img {
 
 header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -41,18 +55,86 @@ header nav ul li a {
   font-weight: bold;
   text-decoration: none;
   font-size: 1.25rem;
+
 }
+
 
 header nav ul li a:hover,
 header nav ul li a:focus {
   text-decoration: underline;
 }
 
+button {
+  background-color: #fff;
+  border: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+}
+
+button a {
+  color: #000;
+  text-decoration: none;
+}
+
+button a:hover {
+  background-color: #000;
+  color: #fff;
+  padding: .10em .30em;
+  border-radius: 10px;
+}
+
 footer {
   text-align: center;
 }
 
+section .main-images {
+  display: grid;
+  grid-template-column: 1fr 1fr;
+  grid-template-row: 1fr 1fr;
+  gap: 1rem;
+}
 
+section h4 {
+  text-align: center;
+  padding-top: 2em;
+}
+
+.main-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem;
+  grid-template-areas:
+    "image1 image1"
+    "image2 image3"
+  ;
+}
+
+#image1 {
+  grid-area: image1;
+}
+
+.about {
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.also-browsed {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.people-saying p {
+  display: flex;
+  padding: 1em;
+}
+
+.people-saying h4 {
+  text-align: center;
+}
 /* Default styling for all screens ends here */
 
 /* Add media query for tablet */
