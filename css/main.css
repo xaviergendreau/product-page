@@ -96,10 +96,12 @@ section .main-images {
 
 section h4 {
   text-align: center;
-  padding-top: 2em;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .main-images {
+  padding-top: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: .5rem;
@@ -113,11 +115,45 @@ section h4 {
   grid-area: image1;
 }
 
+
+.second-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem;
+  grid-template-areas:
+    "image4 image5"
+  ;
+}
+
+#image4 {
+  grid-area: image4;
+}
+
+#image5 {
+  grid-area: image5;
+}
+
 .about {
   padding: 2rem;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1rem;
+  grid-template-areas:
+  "dets1"
+  "dets2"
+  "dets3";
+  gap: 2rem;
+  padding: 4rem 0rem;
+}
+
+.description {
+  grid-area: dets1
+}
+
+.detail-care {
+  grid-area: dets2
+}
+
+.whats-included {
+  grid-area: dets3
 }
 
 .also-browsed {
@@ -125,6 +161,27 @@ section h4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: .5rem;
+}
+
+.bonical-name {
+  padding: 4rem 0rem;
+}
+
+#h4-1 {
+  grid-area: h4-1;
+}
+
+#h4-2{
+  grid-area: h4-2;
+}
+
+#p-1 {
+  grid-area: p-1;
+}
+
+#p-2 {
+  grid-area: p-2;
 }
 
 .people-saying p {
@@ -132,14 +189,84 @@ section h4 {
   padding: 1em;
 }
 
-.people-saying h4 {
+.ppl-saying {
   text-align: center;
+  padding:0;
+  padding-top: 3rem;
 }
 /* Default styling for all screens ends here */
 
 /* Add media query for tablet */
+@media only screen and (min-width: 45em){
 
+  .main-images {
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "image1 image2 image3"
+    ;}
+
+.about {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "dets1 dets1"
+        "dets2 dets3";
+      }
+
+      .also-browsed {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-bottom: 0;
+}
+
+.people-saying {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem:
+}
+
+.bonical-name {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "h4-1 h4-2"
+  "p-1 p-2";
+  gap: 1rem;
+  padding: 3rem 1rem 1rem 1rem;
+  text-align: center;
+
+}
+
+}
 
 
 
 /* Add media query for desktop */
+@media only screen and (min-width: 75em) {
+  .main-images {
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image1 images2"
+      "image1 image3";
+    ;}
+
+    .about {
+          padding-top: 5rem;
+          display: grid;
+          gap: 5rem;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-areas:
+            "dets1 dets2 dets3";
+          }
+.bonical-name {
+  padding:5rem 2rem 5rem 2rem;
+}
+
+}
